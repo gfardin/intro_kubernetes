@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-api
+  labels:
+    app: python-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: python-api-pod
+
+# Pod      
+  template:
+    metadata:
+      labels :
+        app : python-api-pod
+    spec:
+
+    # Conteneur
+      containers:
+      - name: python-api-conteneur
+        image: gfardin/api-python:latest
+        ports:
+        - containerPort: 8000
