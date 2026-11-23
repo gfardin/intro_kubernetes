@@ -10,7 +10,7 @@ TP3
 
 ![2](images/tp3-p2.png)
 
-- En partie 3, on reprend les 3 types de manifest déjà utilisés : deployment, service et ingress. L'objectif est de déployer une app 3-tiers, donc il faut faire chaque action pour le backend, le frontend et la base de données. L'ingress n'est nécessaire que pour le front. On ajoute des variables d'environment pour la base de données et le pour le backend (pour pouvoir contacter la bdd). Il faut que le nom du service backend soit backend et le port exposé 5000 parce que le front utilise ces valeurs dans le code. La bdd doit être sur 5432 et le nom doit correspondre entre les variables d'env 
+- En partie 3, on reprend les 3 types de manifest déjà utilisés : deployment, service et ingress. L'objectif est de déployer une app 3-tiers, donc il faut faire chaque action pour le backend, le frontend et la base de données. L'ingress n'est nécessaire que pour le front. On ajoute des variables d'environment pour la base de données et le pour le backend (pour pouvoir contacter la bdd). Il faut que le nom du service backend soit backend et le port exposé 5000 parce que le front utilise ces valeurs dans le code. La bdd doit être sur 5432 et le nom doit correspondre entre DB_HOST et le nom du service postgresql.
 
 # Mes difficultés
 
