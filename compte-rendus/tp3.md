@@ -1,6 +1,6 @@
 TP2
 
-![1](compte-rendus/tp3-p1.png)
+![1](tp3-p1.png)
 
 # Ma procédure
 
